@@ -1,104 +1,41 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-        (function(){
-            let defaultPath = '';
-            let requestedPath = window.location.pathname;
-            console.log(`Redirecting to default path 1: ${defaultPath}`);
-            
-            if (requestedPath != defaultPath) {
-                window.location.assign = "https://blog.alaa.sh";
-                let requestedPath = defaultPath;
-                // <meta http-equiv="refresh" content="1; URL=https://blog.alaa.sh" />
-                console.log(`Redirecting to requested path 1: ${requestedPath}`);
-        }
-    })();
-    </script>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <style class="preload">
-        html,body{
-            margin:0;
-            height:100%
-        }
-        body.theme-light{
-            background-color:#fff;
-            color:#222
-        }
-        body.theme-dark{
-            background-color:#1e1e1e;
-            color:#dadada
-        }
-        .preload{
-            padding:20px;
-            white-space:pre-wrap;
-            overflow-wrap:break-word
-        }
-        @keyframes rotate{
-            from{
-                transform:rotate(0)
-            }
-            to{
-                transform:rotate(360deg)
-            }
-        }
-    </style>
-
-    <base href="https://publish.obsidian.md">
-
-        <script defer="defer" src="https://publish.obsidian.md/app.js?09cbb17d8c5de2dbdf08"></script>
-        <link rel="preload" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-        <noscript>
-            <link rel="stylesheet" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08">
-        </noscript>
-
-        <title>Welcome - Obsidian Publish</title>
-
-        <link rel="preload" href="https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf/publish.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf/publish.css">
-        </noscript>
-
-        <link rel="icon" href="https://publish.obsidian.md/favicon.ico?09cbb17d8c5de2dbdf08">
-
-        <script type="text/javascript">
-            window.siteInfo={"uid":"2c5a68159068a224535763457f7212bf","host":"publish-01.obsidian.md","status":"active","slug":null,"redirect":1,"customurl":"blog.alaa.sh"};
-            (function(){
-                // let defaultPath = 'Welcome';
-                // let requestedPath = window.location.pathname;
-                // console.log(`Redirecting to default path: ${defaultPath}`);
-                
-                // if (requestedPath != defaultPath) {
-                //     let requestedPath = defaultPath;
-                //     console.log(`Redirecting to requested path: ${requestedPath}`);
-                // }
-                let f = u=>u&&fetch(u,{credentials: "include"});
-                window.preloadOptions=f("https://publish-01.obsidian.md/options/2c5a68159068a224535763457f7212bf");
-                window.preloadCache=f("https://publish-01.obsidian.md/cache/2c5a68159068a224535763457f7212bf");
-                window.preloadPage= f(`https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf${requestedPath}.md`);
-            })();
-        </script>
-        <meta name="description" content="Welcome - Powered by Obsidian Publish.">
-        <meta property="og:description" content="Welcome - Powered by Obsidian Publish.">
-    </script>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>404 — SIGNAL LOST // CRAFTED GLITCHES</title>
+<link rel="icon" type="image/png" href="/assets/logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&family=Space+Mono&display=swap" rel="stylesheet" />
+<style>
+  html,body{margin:0;height:100%;background:#000;color:#f2f2f2;
+    font-family:"Space Mono",ui-monospace,Menlo,monospace;overflow:hidden}
+  .wrap{height:100%;display:grid;place-content:center;text-align:center;gap:1.4rem;padding:2rem}
+  .code{font-family:"Chakra Petch",sans-serif;font-weight:600;
+    font-size:clamp(5rem,26vw,18rem);line-height:.8;letter-spacing:.05em;position:relative}
+  .code::before,.code::after{content:"404";position:absolute;inset:0;opacity:.85;mix-blend-mode:screen}
+  .code::before{color:#00e5ff;animation:a .35s steps(1) infinite}
+  .code::after{color:#ff0055;animation:b .35s steps(1) infinite}
+  @keyframes a{0%,100%{transform:translate(0,0);clip-path:inset(0)}
+    50%{transform:translate(-4px,2px);clip-path:inset(20% 0 55% 0)}}
+  @keyframes b{0%,100%{transform:translate(0,0);clip-path:inset(0)}
+    50%{transform:translate(4px,-2px);clip-path:inset(60% 0 15% 0)}}
+  .msg{font-size:.7rem;letter-spacing:.5em;text-transform:uppercase;color:#6a6a6a}
+  a{color:#f2f2f2;text-decoration:none;border-bottom:1px solid #6a6a6a;
+    font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;padding-bottom:.2em}
+  a:hover{border-color:#00e5ff}
+  .fx{position:fixed;inset:0;pointer-events:none;
+    background:repeating-linear-gradient(to bottom,rgba(255,255,255,.035) 0 1px,transparent 1px 3px);
+    mix-blend-mode:overlay;opacity:.5}
+</style>
 </head>
-
-<body class="theme-dark">
-    <div class="preload" style="text-align:center">
-        <svg style="width:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <path style="transform-origin:50px 50px;animation:1s linear infinite rotate" fill="currentColor" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"/>
-        </svg>
-    </div>
-    <script type="text/javascript">
-        (function(){
-            let t=localStorage.getItem('site-theme'),cl=document.body.classList;
-            if(t&&t!=='dark') {
-                cl.remove('theme-dark');
-                cl.add('theme-'+t)
-            }
-        })();
-    </script>
+<body>
+  <div class="fx"></div>
+  <div class="wrap">
+    <div class="code">404</div>
+    <div class="msg">Signal Lost // Coordinate Not Found</div>
+    <a href="/">Return To Origin</a>
+  </div>
 </body>
 </html>

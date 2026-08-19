@@ -1,104 +1,101 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <script type="text/javascript">
-        (function(){
-            let defaultPath = '';
-            let requestedPath = window.location.pathname;
-            console.log(`Redirecting to default path 1: ${defaultPath}`);
-            
-            if (requestedPath != defaultPath) {
-                window.location.assign = "https://blog.alaa.sh";
-                let requestedPath = defaultPath;
-                // <meta http-equiv="refresh" content="1; URL=https://blog.alaa.sh" />
-                console.log(`Redirecting to requested path 1: ${requestedPath}`);
-        }
-    })();
-    </script>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <style class="preload">
-        html,body{
-            margin:0;
-            height:100%
-        }
-        body.theme-light{
-            background-color:#fff;
-            color:#222
-        }
-        body.theme-dark{
-            background-color:#1e1e1e;
-            color:#dadada
-        }
-        .preload{
-            padding:20px;
-            white-space:pre-wrap;
-            overflow-wrap:break-word
-        }
-        @keyframes rotate{
-            from{
-                transform:rotate(0)
-            }
-            to{
-                transform:rotate(360deg)
-            }
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>CRAFTED GLITCHES</title>
+<meta name="description" content="Crafted Glitches — a little bit of everything (and anything)." />
 
-    <base href="https://publish.obsidian.md">
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CRAFTED GLITCHES" />
+<meta property="og:description" content="A little bit of everything (and anything)." />
+<meta property="og:image" content="assets/logo.png" />
+<meta name="theme-color" content="#000000" />
+<meta name="twitter:card" content="summary_large_image" />
 
-        <script defer="defer" src="https://publish.obsidian.md/app.js?09cbb17d8c5de2dbdf08"></script>
-        <link rel="preload" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="icon" type="image/png" href="assets/logo.png" />
+<link rel="apple-touch-icon" href="assets/logo.png" />
 
-        <noscript>
-            <link rel="stylesheet" href="https://publish.obsidian.md/app.css?09cbb17d8c5de2dbdf08">
-        </noscript>
+<!-- Type: geometric futuristic display + technical mono -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
 
-        <title>Welcome - Obsidian Publish</title>
-
-        <link rel="preload" href="https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf/publish.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <noscript>
-            <link rel="stylesheet" href="https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf/publish.css">
-        </noscript>
-
-        <link rel="icon" href="https://publish.obsidian.md/favicon.ico?09cbb17d8c5de2dbdf08">
-
-        <script type="text/javascript">
-            window.siteInfo={"uid":"2c5a68159068a224535763457f7212bf","host":"publish-01.obsidian.md","status":"active","slug":null,"redirect":1,"customurl":"blog.alaa.sh"};
-            (function(){
-                // let defaultPath = 'Welcome';
-                // let requestedPath = window.location.pathname;
-                // console.log(`Redirecting to default path: ${defaultPath}`);
-                
-                // if (requestedPath != defaultPath) {
-                //     let requestedPath = defaultPath;
-                //     console.log(`Redirecting to requested path: ${requestedPath}`);
-                // }
-                let f = u=>u&&fetch(u,{credentials: "include"});
-                window.preloadOptions=f("https://publish-01.obsidian.md/options/2c5a68159068a224535763457f7212bf");
-                window.preloadCache=f("https://publish-01.obsidian.md/cache/2c5a68159068a224535763457f7212bf");
-                window.preloadPage= f(`https://publish-01.obsidian.md/access/2c5a68159068a224535763457f7212bf${requestedPath}.md`);
-            })();
-        </script>
-        <meta name="description" content="Welcome - Powered by Obsidian Publish.">
-        <meta property="og:description" content="Welcome - Powered by Obsidian Publish.">
-    </script>
+<link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="theme-dark">
-    <div class="preload" style="text-align:center">
-        <svg style="width:50px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-            <path style="transform-origin:50px 50px;animation:1s linear infinite rotate" fill="currentColor" d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"/>
-        </svg>
-    </div>
-    <script type="text/javascript">
-        (function(){
-            let t=localStorage.getItem('site-theme'),cl=document.body.classList;
-            if(t&&t!=='dark') {
-                cl.remove('theme-dark');
-                cl.add('theme-'+t)
-            }
-        })();
-    </script>
+<body>
+<!-- ── boot / cold-start overlay ───────────────────────────────── -->
+<div id="boot" class="boot" aria-hidden="true">
+  <div class="boot__line" data-boot>ESTABLISHING LINK<span class="boot__dots"></span></div>
+</div>
+<script>/* failsafe: always clear the boot veil even if scripts fail to load */
+setTimeout(function(){var b=document.getElementById('boot');if(b)b.classList.add('gone');},3200);</script>
+
+<!-- ── live vortex (webgl) ─────────────────────────────────────── -->
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<!-- static fallback when webgl is unavailable -->
+<noscript>
+  <img class="fallback" src="assets/logo.png" alt="Crafted Glitches" />
+</noscript>
+<img id="fallback" class="fallback" src="assets/logo.png" alt="Crafted Glitches" hidden />
+
+<!-- ── grain / scanline / vignette overlays ────────────────────── -->
+<div class="fx fx--focus" aria-hidden="true"></div>
+<div class="fx fx--scan" aria-hidden="true"></div>
+<div class="fx fx--grain" aria-hidden="true"></div>
+<div class="fx fx--vignette" aria-hidden="true"></div>
+
+<!-- ── content ─────────────────────────────────────────────────── -->
+<main class="stage">
+
+  <header class="top">
+    <span class="top__id" data-scramble>CG//0x1</span>
+    <span class="top__stat"><i class="pulse"></i>SIGNAL&nbsp;ACTIVE</span>
+  </header>
+
+  <section class="core">
+    <h1 class="mark" data-glitch="CRAFTED GLITCHES">
+      <span class="mark__l">CRAFTED</span>
+      <span class="mark__l">GLITCHES</span>
+    </h1>
+
+    <p class="tagline" data-decode="A LITTLE BIT OF EVERYTHING (AND ANYTHING).">A LITTLE BIT OF EVERYTHING (AND ANYTHING).</p>
+  </section>
+
+  <!-- repos surfaced as circuit nodes, echoing the logo's tendrils -->
+  <nav class="nodes" aria-label="Transmissions">
+    <a class="node" href="https://github.com/crafted-glitches" target="_blank" rel="noopener">
+      <span class="node__dot"></span>
+      <span class="node__k" data-scramble>ORG</span>
+      <span class="node__v">github.com/crafted-glitches</span>
+    </a>
+    <a class="node" href="https://github.com/crafted-glitches/particled" target="_blank" rel="noopener">
+      <span class="node__dot"></span>
+      <span class="node__k" data-scramble>PARTICLED</span>
+      <span class="node__v">audio-reactive particle fields</span>
+    </a>
+    <a class="node" href="https://github.com/crafted-glitches/deploy-barometer" target="_blank" rel="noopener">
+      <span class="node__dot"></span>
+      <span class="node__k" data-scramble>DEPLOY-BAROMETER</span>
+      <span class="node__v">should i deploy today? · on hardware</span>
+    </a>
+  </nav>
+
+  <footer class="bottom">
+    <span data-scramble>NULL&nbsp;SECTOR</span>
+    <span class="bottom__coord" id="coord">00.0000&nbsp;/&nbsp;00.0000</span>
+    <span data-scramble>EST.&nbsp;∞</span>
+  </footer>
+
+</main>
+
+<!-- custom cursor -->
+<div id="cursor" class="cursor" aria-hidden="true"></div>
+
+<script src="js/vortex.js"></script>
+<script src="js/glitch.js"></script>
 </body>
 </html>
