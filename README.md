@@ -1,31 +1,20 @@
-# crafted-glitches.github.io
-
-Landing page for the **[Crafted Glitches](https://github.com/crafted-glitches)** GitHub org
-— _a little bit of everything (and anything)._
-
-Dark, minimal, futuristic. Fully static (no build step). The centrepiece is a
-procedural **black-hole vortex** rendered live in a raw WebGL fragment shader,
-echoing the org mark, with RGB-split glitch type, a decoding tagline, film grain,
-scanlines and a custom cursor.
-
 ```
-.
-├── index.html        # structure + meta
-├── 404.html          # glitch "signal lost" page
-├── css/style.css     # dark system, overlays, glitch keyframes
-├── js/vortex.js      # WebGL vortex shader (falls back to the logo)
-├── js/glitch.js      # boot, text decode/scramble, cursor, telemetry
-└── assets/logo.png   # org mark (favicon / OG / WebGL fallback)
+        ▒▓█  CRAFTED GLITCHES  █▓▒
+        a little bit of everything (and anything)
 ```
 
-## Local preview
+> transmission origin — `crafted-glitches.github.io`
+> a black hole rendered live in a shader. do not stare directly into the centre.
 
-Any static server works, e.g.:
-
-```bash
-python3 -m http.server 8080
-# → http://localhost:8080
+```
+NULL SECTOR // 00.0000 / 00.0000 // EST. ∞
+signal ......................... ACTIVE
+payload ........................ static · no build · no dependencies
 ```
 
-Accessibility: honours `prefers-reduced-motion` and degrades to the static logo
-when WebGL is unavailable.
+<sub>the vortex is procedural. the glitches are intentional. everything else is
+a little bit of everything.</sub>
+
+<sub>lights: `open index.html` — the swirl needs webgl; if it can't find any, the
+mark surfaces instead. the machine rests quietly if you ask it to
+(`prefers-reduced-motion`).</sub>
