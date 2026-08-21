@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" width="1280" height="300" role="img" aria-label="Crafted Glitches">
+  <defs>
+    <g id="wm" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="900" font-size="112" letter-spacing="8">
+      <text x="640" y="120">CRAFTED</text>
+      <text x="640" y="238">GLITCHES</text>
+    </g>
+    <pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse">
+      <rect width="3" height="1" fill="#fff" opacity="0.06"/>
+    </pattern>
+    <clipPath id="b1"><rect x="0" y="58"  width="1280" height="26"/></clipPath>
+    <clipPath id="b2"><rect x="0" y="150" width="1280" height="20"/></clipPath>
+    <clipPath id="b3"><rect x="0" y="206" width="1280" height="30"/></clipPath>
+    <linearGradient id="sweep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%"  stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" gradientUnits="userSpaceOnUse" cx="640" cy="150" r="720">
+      <stop offset="60%" stop-color="#000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0.9"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="300" fill="#000"/>
+
+  <!-- rgb-split wordmark: permanent split + animated jitter on top -->
+  <g style="mix-blend-mode:screen">
+    <g transform="translate(-4,0)"><use href="#wm" fill="#00e5ff">
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+        values="0 0;0 0;0 0;0 0;-5 0;0 0;3 -1;0 0;0 0;-2 1;0 0" dur="2.7s" repeatCount="indefinite"/>
+    </use></g>
+    <g transform="translate(4,0)"><use href="#wm" fill="#ff0055">
+      <animateTransform attributeName="transform" type="translate" calcMode="discrete"
+        values="0 0;0 0;4 0;0 0;0 0;0 0;-3 1;0 0;2 0;0 0;0 0" dur="3.2s" repeatCount="indefinite"/>
+    </use></g>
+    <use href="#wm" fill="#f2f2f2"/>
+  </g>
+
+  <!-- datamosh slices: brief displaced flashes of the mark -->
+  <g clip-path="url(#b1)"><use href="#wm" fill="#fff" opacity="0" transform="translate(18,0)">
+    <animate attributeName="opacity" calcMode="discrete" values="0;0;0;0;0;0;0;1;0;0;0;0;0" dur="4.3s" repeatCount="indefinite"/>
+  </use></g>
+  <g clip-path="url(#b2)"><use href="#wm" fill="#00e5ff" opacity="0" transform="translate(-24,0)" style="mix-blend-mode:screen">
+    <animate attributeName="opacity" calcMode="discrete" values="0;0;0;0;0;1;0;0;0;0;0" dur="5.1s" repeatCount="indefinite"/>
+  </use></g>
+  <g clip-path="url(#b3)"><use href="#wm" fill="#fff" opacity="0" transform="translate(-14,0)">
+    <animate attributeName="opacity" calcMode="discrete" values="0;0;0;1;0;0;0;0;0;0" dur="3.6s" repeatCount="indefinite"/>
+  </use></g>
+
+  <!-- vertical scan sweep -->
+  <rect x="0" y="0" width="1280" height="64" fill="url(#sweep)" style="mix-blend-mode:screen">
+    <animateTransform attributeName="transform" type="translate" values="0 -70;0 306" dur="6s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- overlays -->
+  <rect width="1280" height="300" fill="url(#scan)"/>
+  <rect width="1280" height="300" fill="url(#vig)"/>
+</svg>

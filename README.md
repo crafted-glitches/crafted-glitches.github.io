@@ -1,20 +1,29 @@
+<div align="center">
+
+<img src="assets/banner.svg" alt="Crafted Glitches" width="100%">
+
+<code>landing page · crafted-glitches.github.io</code>
+
+</div>
+
+---
+
+this repo **is** the site — one static page, no build, no dependencies.
+the centrepiece is a black hole rendered live in a WebGL shader.
+
 ```
-        ▒▓█  CRAFTED GLITCHES  █▓▒
-        a little bit of everything (and anything)
+index.html       the page
+404.html         signal-lost page
+css/style.css    dark system · overlays · glitch keyframes
+js/vortex.js     webgl vortex — falls back to the logo
+js/glitch.js     boot · text decode · cursor · telemetry
+assets/          logo + banner
 ```
 
-> transmission origin — `crafted-glitches.github.io`
-> a black hole rendered live in a shader. do not stare directly into the centre.
+<sub>open `index.html` — no server required · rests quietly on `prefers-reduced-motion`</sub>
 
-```
-NULL SECTOR // 00.0000 / 00.0000 // EST. ∞
-signal ......................... ACTIVE
-payload ........................ static · no build · no dependencies
-```
+<div align="center">
+<br>
+<sub>[ live ](https://crafted-glitches.github.io)&nbsp;&nbsp;·&nbsp;&nbsp;[ org ](https://github.com/crafted-glitches)</sub>
 
-<sub>the vortex is procedural. the glitches are intentional. everything else is
-a little bit of everything.</sub>
-
-<sub>lights: `open index.html` — the swirl needs webgl; if it can't find any, the
-mark surfaces instead. the machine rests quietly if you ask it to
-(`prefers-reduced-motion`).</sub>
+</div>
