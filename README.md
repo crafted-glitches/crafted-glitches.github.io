@@ -24,6 +24,7 @@ assets/          logo + banner
 
 <div align="center">
 <br>
-<sub>[ live ](https://crafted-glitches.github.io)&nbsp;&nbsp;·&nbsp;&nbsp;[ org ](https://github.com/crafted-glitches)</sub>
+
+[<sub>live</sub>](https://crafted-glitches.github.io) &nbsp;&nbsp;·&nbsp;&nbsp; [<sub>org</sub>](https://github.com/crafted-glitches)
 
 </div>
